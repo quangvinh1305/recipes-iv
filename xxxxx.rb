@@ -28,8 +28,6 @@ describe 'POST /api/v1/app/unlink' do
     include_examples 'invalid obd_id'
     include_examples 'invalid app_type'
     include_examples 'invalid combination of obd_id and ciu'
-
-    # fixes: https://github.com/treasure-data/pioneer-info-distribution-platform/issues/89
     context 'nothing obd_id' do
       let(:params) {
         {
